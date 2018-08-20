@@ -1,12 +1,13 @@
 #!/bin/bash
 
 #j33p's auto-setup script
-#
+
 #Programs to install
 declare -a toInstall=('git' 'xorg' 'i3-gaps' 'neofetch' 'task' 'curl' 'wget' 'vim' 'tmux' 'st' 'wifish' 'neomutt' 'zsh' 'i3blocks' 'alsa')
-#
+
 #File Dirs to make for home
 declare -a mkDirs=('Documents' 'Downloads' 'Pictures' 'Music 'Movies')
+
 #sync mirrors
 sudo xbps-install  -y -S
 #update packages
@@ -16,7 +17,6 @@ sudo xbps-install -y -Su
 for i in "${toInstall[@]}" 
 do
 	sudo xbps-install -y $i	
-
 done	
 
 #Make Dirs loop
