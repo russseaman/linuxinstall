@@ -3,7 +3,7 @@
 #j33p's auto-setup script
 
 #Programs to install
-declare -a toInstall=('git' 'xorg' 'i3-gaps' 'neofetch' 'task' 'curl' 'wget' 'vim' 'tmux' 'st' 'wifish' 'neomutt' 'zsh' 'i3blocks' 'alsa')
+declare -a toInstall=('git' 'xorg' 'neofetch' 'task' 'curl' 'wget' 'vim' 'tmux' 'st' 'wifish' 'neomutt' 'zsh' 'alsa' 'bspwm' 'sxhkd' 'qutebrowser')
 
 #File Dirs to make for home
 declare -a mkDirs=('Documents' 'Downloads' 'Pictures' 'Music 'Movies')
@@ -28,5 +28,7 @@ done
 
 #clean up, after intial install delete the old install script/dir
 sudo rm -rf v01dr1c3/
+
+sudo git clone https://github.com/termwiz/dotfiles-void
 
 sudo xbps-install -y -Su
