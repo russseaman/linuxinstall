@@ -6,7 +6,7 @@
 declare -a toInstall=('git' 'xorg' 'neofetch' 'task' 'curl' 'wget' 'vim' 'tmux' 'st' 'wifish' 'neomutt' 'zsh' 'alsa' 'bspwm' 'sxhkd' 'qutebrowser' 'rofi' 'dmenu' 'xfce4-terminal')
 
 #File Dirs to make for home
-declare -a mkDirs=('Documents' 'Downloads' 'Pictures' 'Music 'Movies')
+declare -a mkDirs=('Documents' 'Downloads' 'Pictures' 'Music' 'Movies')
 
 #sync mirrors
 sudo xbps-install  -y -S
