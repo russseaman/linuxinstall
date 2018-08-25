@@ -3,15 +3,15 @@
 #j33p's auto-setup script
 
 #Programs to install
-declare -a toInstall=('git' 'xorg' 'neofetch' 'task' 'curl' 'wget' 'vim' 'tmux' 'st' 'wifish' 'neomutt' 'zsh' 'alsa' 'bspwm' 'sxhkd' 'qutebrowser' 'rofi' 'dmenu' 'xfce4-terminal')
+declare -a toInstall=('git' 'i3' 'i3blocks' 'i3status' 'i3lock' 'zsh' 'xorg' 'neofetch' 'task' 'curl' 'wget' 'vim' 'tmux' 'alsa-utils' 'wifish' 'neomutt' 'zsh' 'alsa' 'bspwm' 'sxhkd' 'qutebrowser' 'rofi' 'dmenu' 'xfce4-terminal')
 
 #File Dirs to make for home
 declare -a mkDirs=('Documents' 'Downloads' 'Pictures' 'Music' 'Movies')
 
 #sync mirrors
-sudo xbps-install  -y -S
+sudo xbps-install  -y -Su
 #update packages
-sudo xbps-install -y -Su
+sudo xbps-install -y -Suv
 
 #Program install loop
 for i in "${toInstall[@]}" 
@@ -29,6 +29,6 @@ done
 #clean up, after intial install delete the old install script/dir
 sudo rm -rf v01dr1c3/
 
-sudo git clone https://github.com/termwiz/dotfiles-void
+cd /home/j33p/Documents
 
-sudo xbps-install -y -Su
+sudo xbps-install -y -Suv
