@@ -29,6 +29,6 @@ done
 #clean up, after intial install delete the old install script/dir
 sudo rm -rf v01dr1c3/
 
-cd /home/j33p/Documents
+echo 'exec i3' >> .xinitrc
 
 sudo xbps-install -y -Suv
