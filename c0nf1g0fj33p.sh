@@ -3,7 +3,7 @@
 #j33p's auto-setup script
 
 #Programs to install
-declare -a toInstall=('git' 'i3-gaps' 'i3blocks' 'i3status' 'i3lock' 'zsh' 'xorg' 'neofetch' 'task' 'curl' 'wget' 'vim' 'tmux' 'alsa-utils' 'wifish' 'neomutt' 'zsh' 'alsa' 'bspwm' 'sxhkd' 'rofi' 'dmenu' 'feh' 'htop' 'ranger')
+declare -a toInstall=('git' 'i3-gaps' 'i3blocks' 'i3status' 'i3lock' 'zsh' 'xorg' 'neofetch' 'task' 'curl' 'qutebrowser' 'wget' 'vim' 'tmux' 'alsa-utils' 'wifish' 'neomutt' 'zsh' 'alsa' 'bspwm' 'sxhkd' 'rofi' 'dmenu' 'feh' 'htop' 'ranger')
 
 #File Dirs to make for home
 declare -a mkDirs=('Documents' 'Downloads' 'Pictures' 'Music' 'Movies')
