@@ -10,14 +10,16 @@ declare -a mkDirs=('Documents' 'Downloads' 'Pictures' 'Music' 'Movies')
 
 #sync mirrors
 sudo xbps-install  -y -Su
-#update packages
-sudo xbps-install -y -Suv
 
 #Program install loop
 for i in "${toInstall[@]}" 
+
 do
-	sudo xbps-install -y $i	
+	sudo xbps-install -S -y $i	
 done	
+
+#sync mirrors
+sudo xbps-install  -y -Su
 
 #Make Dirs loop
 cd ..		#Go up a directory level
@@ -31,4 +33,4 @@ sudo rm -rf v01dr1c3/
 
 echo 'exec i3' >> .xinitrc
 
-sudo xbps-install -y -Suv
+sudo xbps-install -y -Su
