@@ -9,7 +9,7 @@ declare -a toInstall=('git' 'i3-gaps' 'i3blocks' 'i3status' 'i3lock' 'zsh' 'xorg
 declare -a mkDirs=('Documents' 'Downloads' 'Pictures' 'Music' 'Movies')
 
 #sync mirrors
-sudo xbps-install  -y -Su
+sudo xbps-install -y -Su
 
 #Program install loop
 for i in "${toInstall[@]}" 
@@ -19,7 +19,7 @@ do
 done	
 
 #sync mirrors
-sudo xbps-install  -y -Su
+sudo xbps-install -y -Su
 
 #Make Dirs loop
 cd ..		#Go up a directory level
