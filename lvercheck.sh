@@ -2,11 +2,12 @@
 distro=$(lsb_release -si)
 version=$(lsb_release -sr)
 
-
 case $distro in
-   "Void")
+   "VoidLinux")
         echo "Void Linux Detected"
         pkmgr="xbps-install"
+	update="$pkmgr -S"
+	upgrade="$pkmgr -u"
         ;;
    "Ubuntu")
         echo "Ubuntu Linux Detected"
@@ -14,12 +15,18 @@ case $distro in
             16.04)
                 echo "Ubuntu" = "16.04"
                 pkmgr="apt-get"
-                echo "Package manager = $pkmgr"
+		update="$pkmgr update"
+		upgrade="$pkmgr upgrade"
                 ;;
             18.04)
                 echo "Ubuntu = 18.04"
                 pkmgr="apt"
-                echo "Package manager = $pkmgr"
+		update="$pkmgr update"
+		upgrade="$pkmgr upgrade"
                 ;;
         esac
 esac
+
+echo "Package manager = $pkmgr"
+sudo $update
+sudo $upgrade
