@@ -1,5 +1,5 @@
-# v01dr1c3
+# Linux Auto setup and install script
 
-Auto download and config files for my void linux rice....after you install void linux...download this script and run the config.sh, it will download and build your directory structure as you need it
+Auto download and config files for my linux set up with my customization options....after you install linux...download this script and run the config.sh, it will download all my fav packages and build your initial directory structure.
 
 Updates to come!
